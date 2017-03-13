@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Портфолио</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,400' rel='stylesheet' type='text/css'>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main clearfix">
+			<div class="sidebar left_sidebar">	
+				<div class="block">
+					<div class="sidebar_header">Портфолио</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript + интеграция с MODx</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="http://www.olympiapit.ru/" target="_blank">Магазин спортивного питания</a></li>
+							<li><a href="http://xn--b1agne1ap.xn--p1ai/" target="_blank">«СК «КЛУВЕР»</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="ceilings.html" class="active">Расчёт стоимости холодных потолков</a></li>
+							<li><a href="cams.html">Расчёт стоимости тарифа для камер наружного наблюдения</a></li>
+							<li><a href="bathrobes.html">Конструктор халатов</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="template1.html">Шаблонный сайт</a></li>
+							<li><a href="template2.html">Шаблонный сайт №2</a></li>
+							<li><a href="http://www.belvoronart.ru/" target="_blank">МЕЖДУНАРОДНАЯ ВЫСТАВКА-КОНКУРС «БЕЛАЯ ВОРОНА - 2017»</a></li>
+							<li><a href="http://fitnes64.ru/" target="_blank">Фитнес клуб FirstGym</a></li>
+							<li><a href="http://www.profi-ot.ru/" target="_blank">«Профит-Сервис»</a></li>
+							<li><a href="http://sarmol.ru/" target="_blank">Саратовский Молочный Комбинат</a></li>
+							<li><a href="http://www.sargazav.ru/" target="_blank">Саратовгазвтоматика</a></li>
+						</ul>
+					</div>
+					<a href="index.html" >&laquo; Назад</a>
+				</div>			
+			</div>
+			<div class="content">
+				<section>
+					<h1>Калькулятор стоимости холодных потолков</h1>
+					<div class="calc_form">
+						<div class="errorMessage"></div>
+						<div class="successMessage"></div>
+						<div class="form-successMessage"></div>
+						   <form method="post" action="#">
+							  <label class="short">
+									<b>Общая площадь</b>
+									<input name="f_square" id="f_square" type="text" value=""> м<sup>2</sup>
+								</label>
+								<label class="short">
+									<b>Количество охлаждаемых помещений*</b>
+									<input name="num_rooms" id="num_rooms" type="number" value="" min="0" max="100">
+								</label>
+								<label class="short">
+									<b>Площадь охлаждаемых помещений*</b>
+									<input name="f_your_square" id="f_your_square" type="text" data-value="" value=""> м<sup>2</sup>
+								</label>
+								<div class="message"></div>
+								<label><b>Тип объекта*</b>
+									  <select id="types">
+										<option value="cottage">Коттедж</option>
+										<option value="flat">Квартира</option>
+										<option value="townhouse">Таунхаус</option>
+										<option value="office">Офис</option>
+									   </select>
+								</label>
+								<label><b>Поверхности</b>
+									<select id="surface">
+										<option value="ceilings">Потолки</option>
+										<option value="walls">Стены</option>
+										<option value="floors">Полы</option>
+										<option value="ceilings-walls">Потолки+Стены</option>
+										<option value="ceilings-floors">Потолки+Полы</option>
+										<option value="ceilings-walls-floors">Потолки+Стены+Полы</option>
+									</select>
+								</label>
+								<label><b>Режим работы</b>
+									  <select id="mode">
+										<option value="cooling">Охлаждение</option>
+										<option value="cooling-heating">Охлаждение и обогрев</option>
+										<option value="heating">Обогрев</option>
+									   </select>
+								</label>
+								<label class="chiller_hidden_select"><b>&nbsp;</b>
+									<select id="boiler">
+										<option value="heatPump">Тепловой насос</option>
+										<option value="gasBoiler">Газовый котёл</option>
+										<option value="electricBoiler">Электрический котёл</option>
+									</select>
+								</label>
+								<label><b>Тип монтажа Холодных Потолков</b>
+									<select id="mounting">
+										<option value="drywall">На гипсокартон</option>
+										<option value="concreteBase">На бетонное основание</option>
+										<option value="metalTape">В металлические кассеты</option>
+									</select>
+								</label>
+								<label><b><span>Система «Умный дом»</span></b>
+									  <select id="smart_house">
+										<option value="no">Нет</option>
+										<option value="yes">Есть</option>
+									   </select>
+								</label>
+								<label class="all_types hidden_select"><b>Есть ли <span>центральное кондиционирование</span><br>в здании</b>
+									  <select id="conditioning">
+										<option value="no">Нет</option>
+										<option value="yes">Да</option>
+									   </select>
+								</label>
+								<label class="cottage_type hidden_select"><b>Есть ли <span>геотермальный коллектор</span></b>
+									  <select id="geothermal_reservoir">
+										<option value="no">Нет</option>
+										<option value="yes">Да</option>
+									   </select>
+								</label>
+								<div class="visual"></div>
+								<input name="dollar" id="dollar" type="hidden" readonly="" value="30.1506">
+								<input name="euro" id="euro" type="hidden" readonly="" value="32.0604">
+								<b class="total">Итого стоимость<br>Системы «под ключ»</b>
+								<input name="f_total" id="f_total" type="text" value="" readonly="">
+								<select id="currency" name="currency">
+									<option value="rub">Руб.</option>
+									<option value="EU">EU</option>
+									<option value="USD">USD</option>
+								</select>
+								<input name="f_cost" id="f_cost" type="text" value="" readonly=""> <span class="cost"><i>руб</i> за 1м<sup>2</sup></span>
+								<input name="collectPrice" id="collectPrice" type="hidden" readonly="">
+								<input name="chillerPrice" id="chillerPrice" type="hidden" readonly="">
+								<input name="ChillerName" id="ChillerName" type="hidden" readonly="">
+								<input name="PumpPrice" id="PumpPrice" type="hidden" readonly="">
+								<input name="heatExchangerPrice" id="heatExchangerPrice" type="hidden" readonly="">
+								<input name="zraPrice" id="zraPrice" type="hidden" readonly="">
+								<input name="isolationPrice" id="isolationPrice" type="hidden" readonly="">
+								<input name="materialsPrice" id="materialsPrice" type="hidden" readonly="">
+								<input name="mountingPrice" id="mountingPrice" type="hidden" readonly="">
+								<input name="commissioningPrice" id="commissioningPrice" type="hidden" readonly="">
+						</form>       
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src='js/common.js'></script>
+		<script type="text/javascript" src='js/calc-ceilings.js'></script>
+	</body>
+</html>

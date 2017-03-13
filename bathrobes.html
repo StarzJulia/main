@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Портфолио</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,400' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Bad+Script|Lobster|Marck+Script|Old+Standard+TT" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main clearfix">
+			<div class="sidebar left_sidebar">	
+				<div class="block">
+					<div class="sidebar_header">Портфолио</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript + интеграция с MODx</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="http://www.olympiapit.ru/" target="_blank">Магазин спортивного питания</a></li>
+							<li><a href="http://xn--b1agne1ap.xn--p1ai/" target="_blank">«СК «КЛУВЕР»</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="ceilings.html">Расчёт стоимости холодных потолков</a></li>
+							<li><a href="cams.html">Расчёт стоимости тарифа для камер наружного наблюдения</a></li>
+							<li><a href="bathrobes.html" class="active">Конструктор халатов</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="template1.html">Шаблонный сайт</a></li>
+							<li><a href="template2.html">Шаблонный сайт №2</a></li>
+							<li><a href="http://www.belvoronart.ru/" target="_blank">МЕЖДУНАРОДНАЯ ВЫСТАВКА-КОНКУРС «БЕЛАЯ ВОРОНА - 2017»</a></li>
+							<li><a href="http://fitnes64.ru/" target="_blank">Фитнес клуб FirstGym</a></li>
+							<li><a href="http://www.profi-ot.ru/" target="_blank">«Профит-Сервис»</a></li>
+							<li><a href="http://sarmol.ru/" target="_blank">Саратовский Молочный Комбинат</a></li>
+							<li><a href="http://www.sargazav.ru/" target="_blank">Саратовгазвтоматика</a></li>
+						</ul>
+					</div>
+					<a href="index.html" >&laquo; Назад</a>
+				</div>			
+			</div>
+			<div class="content">
+				<section>
+					<h1>Конструктор халатов</h1>
+					<div id="make">
+						<div class="result">
+							<div class="result-image">
+								<img src="" class="bathrobe">
+								<div class="fancy fancy-back">
+								  <div class="fancy-top">
+									<img src="" style="display: none;">
+								  </div>
+								  <div class="fancy-text">Ваш текст</div>
+								  <div class="fancy-bottom">
+									<img src="" style="display: none;">
+								  </div>
+								</div>
+							</div>
+							<div class="result-image front-image">
+								<img src="" class="bathrobe-front">
+								<div class="fancy fancy-front">
+								  <div class="fancy-top">
+									<img src="" style="display: none;">
+								  </div>
+								  <div class="fancy-text">А<span>М</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="constructor clearfix">
+							<ul class="bathrobe-type"><li>
+							  <input type="radio" value="Взрослый халат" name="form_type" id="adult" data-price="4000" data-front="1">
+							  <label for="adult">Взрослый халат</label>
+							</li>
+							<li>
+							  <input type="radio" value="Детский халат" name="form_type" id="child" data-price="2000" data-front="0">
+							  <label for="child">Детский халат</label>
+							</li></ul>
+									<form action="" method="post" class="adult ajax_form visible">
+								<input type="hidden" name="type" value="Взрослый халат">
+								<h5>Выберите размер</h5>
+								<ul class="constructor-list bathrobe-sizes">
+									<li>
+										<input type="radio" value="40" name="size" id="size-40-1" data-val="40">
+										<label for="size-40-1" class="40"><span>40</span></label>
+									</li><li>
+										<input type="radio" value="42" name="size" id="size-42-1" data-val="42">
+										<label for="size-42-1" class="42"><span>42</span></label>
+									</li><li>
+										<input type="radio" value="44" name="size" id="size-44-1" data-val="44">
+										<label for="size-44-1" class="44"><span>44</span></label>
+									</li><li>
+										<input type="radio" value="46" name="size" id="size-46-1" data-val="46">
+										<label for="size-46-1" class="46"><span>46</span></label>
+									</li><li>
+										<input type="radio" value="48" name="size" id="size-48-1" data-val="48">
+										<label for="size-48-1" class="48"><span>48</span></label>
+									</li><li>
+										<input type="radio" value="50" name="size" id="size-50-1" data-val="50">
+										<label for="size-50-1" class="50"><span>50</span></label>
+									</li>
+								</ul>
+								<h5>Цвет ткани</h5>
+								<ul class="constructor-list bathrobe-colors">
+									<li>
+										<input type="radio" value="белый" name="color" id="color-white-1" data-val="white">
+										<label for="color-white-1" class="white"><span>белый</span></label>
+									</li><li>
+										<input type="radio" value="синий" name="color" id="color-blue-1" data-val="blue">
+										<label for="color-blue-1" class="blue"><span>синий</span></label>
+									</li>
+								</ul>
+								<h5>Цвет вышивки</h5>
+								<ul class="constructor-list bathrobe-embroidery">
+									<li>
+										<input type="radio" value="чёрный" name="embroidery" id="embroidery-black-1" data-val="black">
+										<label for="embroidery-black-1" class="black"><span>чёрный</span></label>
+									</li><li>
+										<input type="radio" value="белый" name="embroidery" id="embroidery-white-1" data-val="white">
+										<label for="embroidery-white-1" class="white"><span>белый</span></label>
+									</li><li>
+										<input type="radio" value="синий" name="embroidery" id="embroidery-blue-1" data-val="blue">
+										<label for="embroidery-blue-1" class="blue"><span>синий</span></label>
+									</li><li>
+										<input type="radio" value="золотой" name="embroidery" id="embroidery-gold-1" data-val="gold">
+										<label for="embroidery-gold-1" class="gold"><span>золотой</span></label>
+									</li><li>
+										<input type="radio" value="серебряный" name="embroidery" id="embroidery-silver-1" data-val="silver">
+										<label for="embroidery-silver-1" class="silver"><span>серебряный</span></label>
+									</li>
+								</ul>
+								<div class="half-block">
+									<h5>Верхний рисунок</h5>
+									<select name="top_picture">
+									  <option value="default">Без рисунка</option>
+									  <option value="crown1">Корона 1</option>
+									  <option value="lion">Лев</option>
+									</select>
+								</div>
+								<div class="half-block">
+								  <h5>Нижний рисунок</h5>
+								  <select name="bottom_picture">
+									  <option value="default">Без рисунка</option>
+									  <option value="monogram1">Вензель 1</option>
+									  <option value="monogram2">Вензель 2</option>
+									  <option value="lion">Лев</option>
+								  </select>
+								</div>
+								<div class="half-block">
+								  <h5>Текст вышивки (2 строки)</h5>
+								  <textarea name="text" id="bathrobe-text-1" placeholder="Ваш текст" maxlength="25"></textarea>
+								  <!--<input type="checkbox" name="autolines" id="autolines-1" value="1"><label for="autolines-1">Включить автоперенос слов</label>-->
+								</div>
+								<div class="half-block">
+									  <h5>Текст вышивки спереди (2 буквы)</h5>
+									  <textarea name="front_text" id="bathrobe-front-text-1" placeholder="АМ" maxlength="2"></textarea>
+									  <input type="checkbox" name="autolines_front" id="autolines_front-1" value="1"><label for="autolines_front-1">Включить автоперенос букв</label>
+									</div>
+									<div class="half-block">
+									  <h5>Рисунок спереди</h5>
+									  <select name="front_picture">
+										  <option value="default">Без рисунка</option>
+										  <option value="monogram1">Вензель 1</option>
+										  <option value="monogram2">Вензель 2</option>
+									  </select>
+									</div>
+								<div class="half-block">
+								  <h5>Шрифт надписи</h5>
+								  <ul class="bathrobe-font">
+									<li>
+										<input type="radio" value="Old-Standard-TT" name="font" id="font-Old-Standard-TT-1" data-val="Old Standard TT">
+										<label for="font-Old-Standard-TT-1" class="Old-Standard-TT"><span>Old Standard</span></label>
+									</li><li>
+										<input type="radio" value="Lobster" name="font" id="font-Lobster-1" data-val="Lobster">
+										<label for="font-Lobster-1" class="Lobster"><span>Lobster</span></label>
+									</li><li>
+										<input type="radio" value="Marck-Script" name="font" id="font-Marck-Script-1" data-val="Marck Script">
+										<label for="font-Marck-Script-1" class="Marck-Script"><span>Marck Script</span></label>
+									</li><li>
+										<input type="radio" value="Bad-Script" name="font" id="font-Bad-Script-1" data-val="Bad Script">
+										<label for="font-Bad-Script-1" class="Bad-Script"><span>Bad Script</span></label>
+									</li>
+								  </ul>
+								</div>
+								<p class="form-result">Фиксированная цена: <span class="price"><span class="price-value">4000</span> руб.</span><br>
+								  Доставка включена в стоимость.<br>Оплата при получении.</p>
+							</form>
+							<form action="" method="post" class="child">
+								<input type="hidden" name="type" value="Детский халат">
+								<h5>Выберите размер</h5>
+								<ul class="constructor-list bathrobe-sizes">
+									<li>
+										<input type="radio" value="26" name="size" id="size-26-2" data-val="26">
+										<label for="size-26-2" class="26"><span>26</span></label>
+									</li><li>
+										<input type="radio" value="28" name="size" id="size-28-2" data-val="28">
+										<label for="size-28-2" class="28"><span>28</span></label>
+									</li><li>
+										<input type="radio" value="30" name="size" id="size-30-2" data-val="30">
+										<label for="size-30-2" class="30"><span>30</span></label>
+									</li><li>
+										<input type="radio" value="32" name="size" id="size-32-2" data-val="32">
+										<label for="size-32-2" class="32"><span>32</span></label>
+									</li><li>
+										<input type="radio" value="34" name="size" id="size-34-2" data-val="34">
+										<label for="size-34-2" class="34"><span>34</span></label>
+									</li><li>
+										<input type="radio" value="36" name="size" id="size-36-2" data-val="36">
+										<label for="size-36-2" class="36"><span>36</span></label>
+									</li><li>
+										<input type="radio" value="38" name="size" id="size-38-2" data-val="38">
+										<label for="size-38-2" class="38"><span>38</span></label>
+									</li>
+								</ul>
+								<h5>Цвет ткани</h5>
+								<ul class="constructor-list bathrobe-colors">
+									<li>
+										<input type="radio" value="синий" name="color" id="color-blue-2" data-val="blue">
+										<label for="color-blue-2" class="blue"><span>синий</span></label>
+									</li><li>
+										<input type="radio" value="розовый" name="color" id="color-pink-2" data-val="pink">
+										<label for="color-pink-2" class="pink"><span>розовый</span></label>
+									</li>
+								</ul>
+								<h5>Цвет вышивки</h5>
+								<ul class="constructor-list bathrobe-embroidery">
+									<li>
+										<input type="radio" value="чёрный" name="embroidery" id="embroidery-black-2" data-val="black">
+										<label for="embroidery-black-2" class="black"><span>чёрный</span></label>
+									</li><li>
+										<input type="radio" value="белый" name="embroidery" id="embroidery-white-2" data-val="white">
+										<label for="embroidery-white-2" class="white"><span>белый</span></label>
+									</li><li>
+										<input type="radio" value="голубой" name="embroidery" id="embroidery-lightblue-2" data-val="lightblue">
+										<label for="embroidery-lightblue-2" class="lightblue"><span>голубой</span></label>
+									</li><li>
+										<input type="radio" value="синий" name="embroidery" id="embroidery-blue-2" data-val="blue">
+										<label for="embroidery-blue-2" class="blue"><span>синий</span></label>
+									</li><li>
+										<input type="radio" value="розовый" name="embroidery" id="embroidery-pink-2" data-val="pink">
+										<label for="embroidery-pink-2" class="pink"><span>розовый</span></label>
+									</li><li>
+										<input type="radio" value="золотой" name="embroidery" id="embroidery-gold-2" data-val="gold">
+										<label for="embroidery-gold-2" class="gold"><span>золотой</span></label>
+									</li><li>
+										<input type="radio" value="серебряный" name="embroidery" id="embroidery-silver-2" data-val="silver">
+										<label for="embroidery-silver-2" class="silver"><span>серебряный</span></label>
+									</li><li>
+										<input type="radio" value="зелёный" name="embroidery" id="embroidery-green-2" data-val="green">
+										<label for="embroidery-green-2" class="green"><span>зелёный</span></label>
+									</li>
+								</ul>
+								<div class="half-block">
+									<h5>Верхний рисунок</h5>
+									<select name="top_picture">
+									  <option value="default">Без рисунка</option>
+									  <option value="crown1">Корона 1</option>
+									  <option value="lion">Лев</option>
+									</select>
+								</div>
+								<div class="half-block">
+								  <h5>Нижний рисунок</h5>
+								  <select name="bottom_picture">
+									  <option value="default">Без рисунка</option>
+									  <option value="monogram1">Вензель 1</option>
+									  <option value="monogram2">Вензель 2</option>
+									  <option value="lion">Лев</option>
+								  </select>
+								</div>
+								<div class="half-block">
+								  <h5>Текст вышивки (2 строки)</h5>
+								  <textarea name="text" id="bathrobe-text-2" placeholder="Ваш текст" maxlength="25"></textarea>
+								  <!--<input type="checkbox" name="autolines" id="autolines-2" value="1"><label for="autolines-2">Включить автоперенос слов</label>-->
+								</div>
+								
+								<div class="half-block">
+								  <h5>Шрифт надписи</h5>
+								  <ul class="bathrobe-font">
+									<li>
+										<input type="radio" value="Old-Standard-TT" name="font" id="font-Old-Standard-TT-2" data-val="Old Standard TT">
+										<label for="font-Old-Standard-TT-2" class="Old-Standard-TT"><span>Old Standard</span></label>
+									</li><li>
+										<input type="radio" value="Lobster" name="font" id="font-Lobster-2" data-val="Lobster">
+										<label for="font-Lobster-2" class="Lobster"><span>Lobster</span></label>
+									</li><li>
+										<input type="radio" value="Marck-Script" name="font" id="font-Marck-Script-2" data-val="Marck Script">
+										<label for="font-Marck-Script-2" class="Marck-Script"><span>Marck Script</span></label>
+									</li><li>
+										<input type="radio" value="Bad-Script" name="font" id="font-Bad-Script-2" data-val="Bad Script">
+										<label for="font-Bad-Script-2" class="Bad-Script"><span>Bad Script</span></label>
+									</li>
+								  </ul>
+								</div>
+								<p class="form-result">Фиксированная цена: <span class="price"><span class="price-value">2000</span> руб.</span><br>
+								  Доставка включена в стоимость.<br>Оплата при получении.</p>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src='js/common.js'></script>
+		<script type="text/javascript" src='js/calc-bathrobes.js'></script>
+	</body>
+</html>

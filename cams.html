@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Портфолио</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,400' rel='stylesheet' type='text/css'>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="main clearfix">
+			<div class="sidebar left_sidebar">	
+				<div class="block">
+					<div class="sidebar_header">Портфолио</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript + интеграция с MODx</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="http://www.olympiapit.ru/" target="_blank">Магазин спортивного питания</a></li>
+							<li><a href="http://xn--b1agne1ap.xn--p1ai/" target="_blank">«СК «КЛУВЕР»</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="ceilings.html">Расчёт стоимости холодных потолков</a></li>
+							<li><a href="cams.html" class="active">Расчёт стоимости тарифа для камер наружного наблюдения</a></li>
+							<li><a href="bathrobes.html">Конструктор халатов</a></li>
+						</ul>
+					</div>
+					<div class="sidebar_subheader">Вёрстка + JavaScript</div>
+					<div class="sidebar_content">
+						<ul>
+							<li><a href="template1.html">Шаблонный сайт</a></li>
+							<li><a href="template2.html">Шаблонный сайт №2</a></li>
+							<li><a href="http://www.belvoronart.ru/" target="_blank">МЕЖДУНАРОДНАЯ ВЫСТАВКА-КОНКУРС «БЕЛАЯ ВОРОНА - 2017»</a></li>
+							<li><a href="http://fitnes64.ru/" target="_blank">Фитнес клуб FirstGym</a></li>
+							<li><a href="http://www.profi-ot.ru/" target="_blank">«Профит-Сервис»</a></li>
+							<li><a href="http://sarmol.ru/" target="_blank">Саратовский Молочный Комбинат</a></li>
+							<li><a href="http://www.sargazav.ru/" target="_blank">Саратовгазвтоматика</a></li>
+						</ul>
+					</div>
+					<a href="index.html" >&laquo; Назад</a>
+				</div>			
+			</div>
+			<div class="content">
+				<section>
+					<h1>Калькулятор стоимости тарифа для камер наружного наблюдения</h1>
+					<div id="calc" class="clearfix">
+						<div class="calc-result">
+							<p>Цена</p>
+							<span class="result-price"><span>0</span> <i>руб/мес</i></span>
+						</div>
+						<div class="calc-options">
+							<input type="hidden" id="cams" value="2">
+							<input type="hidden" id="users" value="0">
+							<input type="hidden" id="archive" value="0">
+							<div class="calc-field cams-field">
+								<label>Количество камер</label>
+								<p id="cams-val"><span>2</span> шт</p>
+								<div id="slider-cam" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 1%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 1%;"></span></div>
+							</div>
+							<div class="calc-field archive-field">
+								<label>Период хранения архива в облаке</label>
+								<p id="archive-val"><span>0</span> дней</p>
+								<div id="slider-archive" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+							</div>
+							<div class="calc-field users-field">
+								<label>Передача прав на доступ к камере (дополнительные пользователи)</label>
+								<p id="users-val">до <span>0</span> пользователей</p>
+								<div id="slider-user" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 0%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span></div>
+							</div>
+						</div>
+					</div>				
+				</section>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+		<script type="text/javascript" src='js/common.js'></script>
+		<script type="text/javascript" src='js/calc-cams.js'></script>
+	</body>
+</html>
